@@ -52,7 +52,7 @@ export default () => {
       ...messageList(),
       {
         role: 'user',
-        content: inputValue,
+        content: "give me instagram caption on "+inputValue,
       },
     ])
     requestWithLatestMessage()
@@ -217,7 +217,7 @@ export default () => {
             ref={inputRef!}
             disabled={systemRoleEditing()}
             onKeyDown={handleKeydown}
-            placeholder="Enter something..."
+            placeholder="Enter Category..."
             autocomplete="off"
             autofocus
             onInput={() => {
