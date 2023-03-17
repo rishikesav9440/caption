@@ -52,7 +52,7 @@ export default () => {
       ...messageList(),
       {
         role: 'user',
-        content: "give me instagram caption on "+inputValue,
+        content: "give me 3 creative instagram caption on "+inputValue,
       },
     ])
     requestWithLatestMessage()
